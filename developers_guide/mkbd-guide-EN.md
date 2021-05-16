@@ -1,4 +1,4 @@
-#Developer Guide (EN)
+# Developer Guide (EN)
 ## Introduction
 This is a guide for those developing the Meishi Keyboard.
 We will explain the process of creating a "business card type" keyboard such as `mkbd / pcb` in a tutorial format.
