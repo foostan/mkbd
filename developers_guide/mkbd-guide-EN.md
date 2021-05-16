@@ -1,6 +1,4 @@
-
-
-#Developer Guide (JP)
+#Developer Guide (EN)
 ## Introduction
 This is a guide for those developing the Meishi Keyboard.
 We will explain the process of creating a "business card type" keyboard such as `mkbd / pcb` in a tutorial format.
@@ -42,9 +40,9 @@ It is recommended because you can learn how to use KiCad in detail.
 Before you start designing, first get the parts (library) you need for your keyboard.
 Get the required library from GitHub as follows.
 
-`` ```
+```
 $ git clone https://github.com/foostan/kbd
-`` ```
+```
 
 Alternatively, go to https://github.com/foostan/kbd and download.
 
@@ -52,7 +50,7 @@ Next, load the obtained library from "Settings> Manage Symbol Library ...".
 
 ![manage_lib](./images/eeschema/manage_lib.png)
 
-From Browse Library ..., open `kbd / library / kbd.lib`.
+From [Browse Library ... `kbd / library / kbd.lib`], click [Open].
 
 ![open_lib](./images/eeschema/open_lib.png)
 
@@ -147,7 +145,7 @@ Select "Run Electrical Rule Check" from the menu above
 
 ![erc](./images/eeschema/erc.png)
 
-[I will do it. It is OK if no warning is displayed in "Message" and only "End" is displayed.
+I will do it. It is OK if no warning is displayed in "Message" and only "End" is displayed.
 
 ![run_erc](./images/eeschema/run_erc.png)
 
@@ -160,7 +158,7 @@ Select Edit Footprint Library Table and select
 
 ![run_erc](./images/eeschema/footprint_lib.png)
 
-From Browse Library ..., select `kbd / kbd.pretty` and click OK.
+From [Browse Library ...], select `kbd / kbd.pretty` and click [OK].
 
 ![run_erc](./images/eeschema/select_kbd_pretty.png)
 
@@ -229,28 +227,28 @@ The position of the line is determined by the start point X, start point Y, end 
 I think there are 4 main lines, so each one
 
 1st
---Starting point X: 0
---Starting point Y: 0
---End point X: 91
---End point Y: 0
+- Starting point X: 0
+- Starting point Y: 0
+- End point X: 91
+- End point Y: 0
 
 2nd
---Starting point X: 91
---Starting point Y: 0
---End point X: 91
---End point Y: 55
+- Starting point X: 91
+- Starting point Y: 0
+- End point X: 91
+- End point Y: 55
 
 3rd
---Starting point X: 91
---Starting point Y: 55
---End point X: 0
---End point Y: 55
+- Starting point X: 91
+- Starting point Y: 55
+- End point X: 0
+- End point Y: 55
 
 4th
---Starting point X: 0
---Starting point Y: 55
---End point X: 0
---End point Y: 0
+- Starting point X: 0
+- Starting point Y: 55
+- End point X: 0
+- End point Y: 0
 
 Is specified.
 
@@ -399,13 +397,13 @@ Generate a manufacturing file from "File> Plot".
 
 In "Included Layers"
 
---F.Cu
---B.Cu
---F.SilkS
---B.SilkS
---F.Mask
---B. Mask
---Edge.Cuts
+- F.Cu
+- B.Cu
+- F.SilkS
+- B.SilkS
+- F.Mask
+- B. Mask
+- Edge.Cuts
 
 Choose.
 The rest is the default.
