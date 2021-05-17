@@ -1,7 +1,7 @@
 # Developer's Guide (EN)
 ## Introduction
 This is a guide for those developing the Meishi Keyboard.
-We will explain the process of creating a "business card type" keyboard such as `mkbd / pcb` in a tutorial format.
+I will explain the process of creating a "business card type" keyboard such as `mkbd / pcb` in a tutorial format.
 
 ## PCB design
 ### Start a new project
@@ -98,13 +98,13 @@ Enter "gnd" in the search form, select "GND" and click OK.
 ![add_gnd](./images/eeschema/add_gnd.png)
 
 Add GND referring to the image below.
-If you are interested in the appearance, try adjusting with the shortcut `g` or the shortcut` r` (please actually check the behavior of each shortcut).
+If you are interested in the appearance, try adjusting with the shortcut `g` or the shortcut `r` (please actually check the behavior of each shortcut).
 
 ![set_gnd](./images/eeschema/set_gnd.png)
 
 Next, I will attach a reset switch.
 On the Eeschema work screen, press the shortcut `a` to open the symbol selection window.
-Type sw_push in the search form, select SW_Push and click OK.
+Type "sw_push" in the search form, select SW_Push and click OK.
 It doesn't matter if it's the same as the key switch, but I changed it because it's easier to understand if it looks different.
 
 ![add_sw_push_reset](./images/eeschema/add_sw_push_reset.png)
@@ -115,7 +115,7 @@ Wire and GND in the same way as a keyswitch.
 
 Attach VCC and GND to ProMicro_r.
 On the Eeschema work screen, press the shortcut `a` to open the symbol selection window.
-Type vcc in the search form, select VCC and click OK.
+Type "vcc" in the search form, select VCC and click OK.
 
 ![set_vcc_and_gnd](./images/eeschema/set_vcc_and_gnd.png)
 
@@ -127,7 +127,7 @@ Now that we've wired all the necessary parts, we'll flag the unused ports of Pro
 
 Finally, connect PWR_FLAG to VCC and GND.
 On the Eeschema work screen, press the shortcut `a` to open the symbol selection window.
-Type pwr_flag in the search form, select PWR_FLAG and click OK.
+Type "pwr_flag" in the search form, select PWR_FLAG and click OK.
 
 ![set_pwr_flag](./images/eeschema/set_pwr_flag.png)
 
@@ -136,12 +136,12 @@ Select "Annotate schematic symbol" from the above menu
 
 ![annotation](./images/eeschema/annotation.png)
 
-Leave the settings as they are and [Annotate].
+Leave the settings as they are and click [Annotate].
 
 ![set_annotation](./images/eeschema/set_annotation.png)
 
 Next, check the designed circuit for defects.
-Select "Run Electrical Rule Check" from the menu above
+Select "Run Electrical Rule Check" from the menu above.
 
 ![erc](./images/eeschema/erc.png)
 
@@ -221,7 +221,7 @@ First, make a rough rectangle.
 
 
 Then hover over the line and use the shortcut `e` to display the Wiring Segment Properties.
-The position of the line is determined by the start point X, start point Y, end point X, and end point Y. ``
+The position of the line is determined by the start point X, start point Y, end point X, and end point Y. 
 ![edit_xy](./images/pcbnew/edit_xy.png)
 
 I think there are 4 main lines, so each one
@@ -250,7 +250,7 @@ I think there are 4 main lines, so each one
 - End point X: 0
 - End point Y: 0
 
-Is specified.
+is specified.
 
 ![edge_cut](./images/pcbnew/edge_cut.png)
 
